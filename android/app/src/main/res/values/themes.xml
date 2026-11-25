@@ -1,0 +1,14 @@
+<resources>
+    <color name="worth_teal">#008D82</color>
+    <color name="worth_background">#F3F6F5</color>
+    <style name="Theme.Worth" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/worth_teal</item>
+        <item name="colorPrimaryVariant">@color/worth_teal</item>
+        <item name="colorSecondary">@color/worth_teal</item>
+        <item name="android:colorBackground">@color/worth_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

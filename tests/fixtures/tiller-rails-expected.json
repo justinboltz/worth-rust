@@ -1,0 +1,219 @@
+{
+  "transactions": [
+    {
+      "row": 2,
+      "date": "2026-01-02",
+      "name": "Market",
+      "amount": "25.5",
+      "account_key": "checking",
+      "source_account_name": "Checking",
+      "category": "Groceries",
+      "source_transaction_id": "tiller:id:tx1:1052fba3b714aea0b8f845477ae17f07b4435870b22c320421109e10cc91e0d1:1",
+      "original_description": "Market original",
+      "notes": "weekly",
+      "tags": null,
+      "hidden": false,
+      "transfer": false,
+      "file_duplicate": false,
+      "metadata": {
+        "Date": "46024",
+        "Description": "Market",
+        "Category": "Groceries",
+        "Amount": "-25.5",
+        "Account": "Checking",
+        "Account #": "xxxx1234",
+        "Institution": "Bank",
+        "Transaction ID": "tx1",
+        "Account ID": "checking",
+        "Full Description": "Market original",
+        "Notes": "weekly"
+      }
+    },
+    {
+      "row": 3,
+      "date": "2026-01-03",
+      "name": "Pay",
+      "amount": "-2500.0",
+      "account_key": "checking",
+      "source_account_name": "Checking",
+      "category": "Salary",
+      "source_transaction_id": "tiller:id:tx2:71a97514cb9755af2ff4645b3132a8487a265f7ad8d40a05bd19f66b097a6521:1",
+      "original_description": "",
+      "notes": "",
+      "tags": null,
+      "hidden": false,
+      "transfer": false,
+      "file_duplicate": false,
+      "metadata": {
+        "Date": "46025",
+        "Description": "Pay",
+        "Category": "Salary",
+        "Amount": "2500",
+        "Account": "Checking",
+        "Account #": "xxxx1234",
+        "Institution": "Bank",
+        "Transaction ID": "tx2",
+        "Account ID": "checking"
+      }
+    },
+    {
+      "row": 4,
+      "date": "2026-01-04",
+      "name": "Investing",
+      "amount": "100.0",
+      "account_key": "checking",
+      "source_account_name": "Checking",
+      "category": "Investment move",
+      "source_transaction_id": "tiller:id:tx3:d4f08640486247bd675bbef2abd35cfe4e29ebb29f75addf29dbd9133cd9b1a2:1",
+      "original_description": "",
+      "notes": "",
+      "tags": null,
+      "hidden": true,
+      "transfer": true,
+      "file_duplicate": false,
+      "metadata": {
+        "Date": "46026",
+        "Description": "Investing",
+        "Category": "Investment move",
+        "Amount": "-100",
+        "Account": "Checking",
+        "Account #": "xxxx1234",
+        "Institution": "Bank",
+        "Transaction ID": "tx3",
+        "Account ID": "checking"
+      }
+    },
+    {
+      "row": 5,
+      "date": "2026-01-05",
+      "name": "Old store",
+      "amount": "10.0",
+      "account_key": "legacy:2e2dc2e086af0fe9182d1a6d0b7dee1d3fda98c102ada41e2810c80b0213369c",
+      "source_account_name": "Old cash",
+      "category": "Old category",
+      "source_transaction_id": "tiller:row:5ccca0a40e65d4ec5d76b443cc2eb24daad4300801ad37ec5c582ff43d177eb6:1",
+      "original_description": "",
+      "notes": "",
+      "tags": null,
+      "hidden": false,
+      "transfer": false,
+      "file_duplicate": false,
+      "metadata": {
+        "Date": "46027",
+        "Description": "Old store",
+        "Category": "Old category",
+        "Amount": "-10",
+        "Account": "Old cash"
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "key": "legacy:2e2dc2e086af0fe9182d1a6d0b7dee1d3fda98c102ada41e2810c80b0213369c",
+      "name": "Old cash",
+      "institution": "",
+      "mask": "",
+      "hidden": false
+    },
+    {
+      "key": "checking",
+      "name": "Checking",
+      "institution": "Bank",
+      "mask": "xxxx1234",
+      "hidden": false,
+      "class": "Asset",
+      "type": "CHECKING",
+      "group": "Cash group",
+      "latest_at": "46025.4"
+    },
+    {
+      "key": "debt",
+      "name": "Debt",
+      "institution": "Bank",
+      "mask": "xxxx5678",
+      "hidden": true,
+      "class": "Liability",
+      "type": "MONEY_MARKET",
+      "group": "Debt group",
+      "latest_at": "46024.5"
+    }
+  ],
+  "balances": [
+    {
+      "account_key": "checking",
+      "date": "2026-01-02",
+      "timestamp": "46024.2",
+      "balance": "100.0",
+      "id": "b1",
+      "row": 2
+    },
+    {
+      "account_key": "checking",
+      "date": "2026-01-02",
+      "timestamp": "46024.8",
+      "balance": "110.0",
+      "id": "b2",
+      "row": 3
+    },
+    {
+      "account_key": "checking",
+      "date": "2026-01-03",
+      "timestamp": "46025.4",
+      "balance": "150.0",
+      "id": "b3",
+      "row": 4
+    },
+    {
+      "account_key": "debt",
+      "date": "2026-01-02",
+      "timestamp": "46024.5",
+      "balance": "50.0",
+      "id": "b4",
+      "row": 5
+    }
+  ],
+  "categories": [
+    {
+      "name": "Groceries",
+      "group": "Living",
+      "type": "Expense",
+      "hidden": false
+    },
+    {
+      "name": "Salary",
+      "group": "Income",
+      "type": "Income",
+      "hidden": false
+    },
+    {
+      "name": "Investment move",
+      "group": "Transfers",
+      "type": "Transfer",
+      "hidden": true
+    },
+    {
+      "name": "Old category",
+      "group": "",
+      "type": "",
+      "hidden": false
+    }
+  ],
+  "rules": [
+    {
+      "Category": "Groceries",
+      "Description Contains": "Market",
+      "Amount Min": "10",
+      "_row": 2
+    }
+  ],
+  "warnings": [
+    "No nonzero monthly budgets were found. No budgets will be created.",
+    "1 older transaction has no Tiller ID. Worth will recognize unchanged rows when you import the same data again.",
+    "AutoCat rules (1) are retained for reference, but are not activated. Worth's rule conditions and ordering differ; recreate rules in Rules after import.",
+    "Workbook charts and calculated report tabs are rebuilt from imported history in Worth.",
+    "Choose the workbook currency below; Tiller does not provide a currency column in this template."
+  ],
+  "errors": [
+
+  ]
+}

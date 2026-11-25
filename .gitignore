@@ -1,0 +1,13 @@
+/target/
+/.env
+/.env.*
+!/.env.example
+/backups/
+/tmp/
+*.dump
+*.sql.gz
+.DS_Store
+/android/.gradle/
+/android/.local/
+/android/local.properties
+/android/**/build/

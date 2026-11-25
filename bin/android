@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+worth_root="$(cd "$(dirname "$0")/.." && pwd)"
+export ANDROID_HOME="${ANDROID_HOME:-$worth_root/tmp/android-sdk}"
+export ANDROID_USER_HOME="${ANDROID_USER_HOME:-$worth_root/tmp/android-user}"
+export GRADLE_USER_HOME="${GRADLE_USER_HOME:-$worth_root/tmp/gradle}"
+worth_adb="$ANDROID_HOME/platform-tools/adb"
+worth_apk="$worth_root/tmp/android-builds/Worth-debug.apk"
+worth_command="${1:-build}"
+if [ "$#" -gt 0 ]; then shift; fi
+
+if [ ! -x "$worth_adb" ]; then
+  echo 'Android SDK missing. See android/README.md; set ANDROID_HOME to your installed SDK.' >&2
+  exit 1
+fi
+mkdir -p "$ANDROID_USER_HOME" "$GRADLE_USER_HOME"
+
+case "$worth_command" in
+  build|check)
+    if [ -z "${JAVA_HOME:-}" ] && [ -x /usr/libexec/java_home ]; then
+      export JAVA_HOME="$(/usr/libexec/java_home -v 17)"
+    fi
+    cd "$worth_root/android"
+    printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+    mkdir -p .local
+    if [ ! -f .local/debug.keystore ]; then
+      "${JAVA_HOME:+$JAVA_HOME/bin/}keytool" -genkeypair -keystore .local/debug.keystore \
+        -storepass android -keypass android -alias androiddebugkey \
+        -dname 'CN=Android Debug,O=Android,C=US' -keyalg RSA -keysize 2048 -validity 10000
+    fi
+    if [ "$worth_command" = check ]; then
+      exec ./gradlew --console=plain :app:testDebugUnitTest :app:lintDebug "$@"
+    fi
+    ./gradlew --console=plain :app:assembleDebug "$@"
+    mkdir -p "$(dirname "$worth_apk")"
+    cp app/build/outputs/apk/debug/app-debug.apk "$worth_apk"
+    printf '\nAPK: %s\n' "$worth_apk"
+    ;;
+  devices)
+    exec "$worth_adb" devices -l
+    ;;
+  install|connect)
+    # Pass a serial explicitly if multiple Android devices are connected.
+    worth_serial="${1:-}"
+    worth_device_adb() {
+      if [ -n "$worth_serial" ]; then
+        "$worth_adb" -s "$worth_serial" "$@"
+      else
+        "$worth_adb" "$@"
+      fi
+    }
+    if [ "$(worth_device_adb get-state 2>/dev/null || true)" != device ]; then
+      echo 'Connect and unlock your Pixel, enable USB debugging, and accept the Mac authorization prompt.' >&2
+      echo 'Use bin/android devices to inspect connections; pass a device serial if needed.' >&2
+      exit 1
+    fi
+    worth_device_adb reverse tcp:3001 tcp:3001
+    if [ "$worth_command" = install ]; then
+      if [ ! -f "$worth_apk" ]; then echo 'Run bin/android build first.' >&2; exit 1; fi
+      worth_device_adb install -r "$worth_apk"
+    fi
+    worth_device_adb shell am start -n app.worth.mobile.rustdebug/app.worth.mobile.MainActivity
+    ;;
+  *)
+    echo 'Usage: bin/android {build|check|devices|install [serial]|connect [serial]}' >&2
+    exit 1
+    ;;
+esac

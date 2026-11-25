@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+if [ ! -f .env ]; then
+  umask 077
+  cp .env.example .env
+  worth_key="$(openssl rand -base64 32)"
+  WORTH_SETUP_KEY="$worth_key" python3 - <<'PY'
+import os
+from pathlib import Path
+p=Path('.env');p.write_text(p.read_text().replace('WORTH_ENCRYPTION_KEY=','WORTH_ENCRYPTION_KEY='+os.environ['WORTH_SETUP_KEY']))
+PY
+  chmod 600 .env
+fi
+if ! psql -d postgres -Atc "SELECT 1 FROM pg_database WHERE datname='worth_rust_development'" | grep -q 1; then
+  createdb worth_rust_development
+fi
+cargo build --locked
+printf 'Ready. Start Worth with bin/dev, then open http://localhost:3001.\n'

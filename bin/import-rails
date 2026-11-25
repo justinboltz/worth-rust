@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+worth_root="$(cd "$(dirname "$0")/.." && pwd)"
+worth_source="${1:?Usage: bin/import-rails /path/to/Budget [--copy-plaid-config]}"
+worth_source="$(cd "$worth_source" && pwd)"
+if [ "${2:-}" = --copy-plaid-config ]; then export WORTH_COPY_PLAID_CONFIG=1; fi
+cd "$worth_root"
+cargo build --locked --bin import_rails
+# Pipe directly; never leave a plaintext bank-token export on disk.
+(cd "$worth_source" && bin/rails runner "$worth_root/bin/export_rails.rb") | "$worth_root/target/debug/import_rails"

@@ -1,0 +1,690 @@
+{
+  "source_commit": "db0b44693634ee6e51dd6b1f40227acd538634a3",
+  "includes_uncommitted_work": true,
+  "files": [
+    {
+      "path": "app/assets/config/manifest.js",
+      "sha256": "f7795ab8528da07bc05a3ab617ceb6e27fbfccdf6d2245bac0ea75c870ce2589"
+    },
+    {
+      "path": "app/assets/images/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/assets/stylesheets/application.css",
+      "sha256": "fc25912d04dde0b9c03a337ab4a1ace8ac98a7868de80f449b5278d030504bc2"
+    },
+    {
+      "path": "app/assets/stylesheets/manual_assets.css",
+      "sha256": "a0526a4a52fa8415aa5f62e74bb743370d7154b2ea1a018f71a59cf5b5baeaa4"
+    },
+    {
+      "path": "app/assets/stylesheets/mint_workflows.css",
+      "sha256": "4a9c5e0be99b27b03d6ab3e51929d255fe12b8d83b498050e8badd8d5a0ecb00"
+    },
+    {
+      "path": "app/assets/stylesheets/recurring.css",
+      "sha256": "aef6b9d81744ec7672e687727a8c7a2dd2973b9b73bef60648dad9cac513b52f"
+    },
+    {
+      "path": "app/assets/stylesheets/search.css",
+      "sha256": "109e7c6617d9c4c1c539da0a6ec4ea5f19417ec0890fdaf6b7cc895f900f7ae5"
+    },
+    {
+      "path": "app/channels/application_cable/channel.rb",
+      "sha256": "38d579eae4970bc9bb298cc8d4bfb0e4d6390d94e5d4e3068be6c8479c5551ed"
+    },
+    {
+      "path": "app/channels/application_cable/connection.rb",
+      "sha256": "d7498ba24c43e669bdbf01d29b058514fe3c4a26d439992e54a8e56acd07a8fb"
+    },
+    {
+      "path": "app/controllers/api/v1/base_controller.rb",
+      "sha256": "cd455b7ef45fa1aeaf154dfa7083f43d4af8a9f247086c1920d3ed45c9238eb8"
+    },
+    {
+      "path": "app/controllers/api/v1/plaid_controller.rb",
+      "sha256": "c53e363252a1832e3c17965e70416ec56e516f49d6cc9a134f9b0f1659b31832"
+    },
+    {
+      "path": "app/controllers/application_controller.rb",
+      "sha256": "4b7b7b438a7cb4ca88582bb74ab12354df24076eb462996e09b4246c0671a090"
+    },
+    {
+      "path": "app/controllers/bank_connections_controller.rb",
+      "sha256": "1f8a237eeea6a1f055360cbc1dd8c599acf300364d545d37c484f45888a64685"
+    },
+    {
+      "path": "app/controllers/budgets_controller.rb",
+      "sha256": "6a814b1f91296295325987268c1613b8b266cdbf67699ee599b0796d2d8269bb"
+    },
+    {
+      "path": "app/controllers/categories_controller.rb",
+      "sha256": "ec2650368c3f00286c2cc4620c47368ce62fac221341f9ae933d640c7f374759"
+    },
+    {
+      "path": "app/controllers/concerns/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/controllers/dashboard_controller.rb",
+      "sha256": "a67b4fb7b88cf44d2d7f3769c4d8a32e5e534f5c8ca1e0750e60a1456412f09a"
+    },
+    {
+      "path": "app/controllers/imports_controller.rb",
+      "sha256": "4e9925b2ac3c0a7e9a35c496cb294bf4aeeca04cbd9bbc77300c8e3b795b5c50"
+    },
+    {
+      "path": "app/controllers/manual_assets_controller.rb",
+      "sha256": "3e8c848bff336f490cac4cb9a450342b694dd50930feb4cb702c5da54500cdd2"
+    },
+    {
+      "path": "app/controllers/passwords_controller.rb",
+      "sha256": "852265112c8cbfab6468e30abebb6f0583e9b8666c48244ab6f6742573d5d0e7"
+    },
+    {
+      "path": "app/controllers/plaid_items_controller.rb",
+      "sha256": "b822c6f7a81261888eb8be71c387d76c94560d2389b54556b9a71ce6bea279a3"
+    },
+    {
+      "path": "app/controllers/recurring_items_controller.rb",
+      "sha256": "97222c1a7047a65f0fd4da8fb801c9d9dd59a779144d58455e5cca902663aa36"
+    },
+    {
+      "path": "app/controllers/sessions_controller.rb",
+      "sha256": "328134c3ebda0b3c28f70bca3ae4586dd21730a4231d4fe13d559acdfcc0b7fa"
+    },
+    {
+      "path": "app/controllers/transaction_rules_controller.rb",
+      "sha256": "b7a54641ffa8679361c716ce5ecc0d5cc7898bd400ffd30fd0895ff33fb781a8"
+    },
+    {
+      "path": "app/controllers/transactions_controller.rb",
+      "sha256": "08d21279a88c581d2da1a2c54ea4f4fdcc769bb879d51ae790ecd1c28b254854"
+    },
+    {
+      "path": "app/controllers/trends_controller.rb",
+      "sha256": "9c7039ee908a571a9364fdd05c026ba5e51f45ce2fd619dc628e1cf49ebde436"
+    },
+    {
+      "path": "app/controllers/users_controller.rb",
+      "sha256": "a20fb620dc6a97a511c383c67903d54fda23be4d4e0d55069f53f3acac3d5121"
+    },
+    {
+      "path": "app/helpers/application_helper.rb",
+      "sha256": "1ca63a77fe1962dd6695c2d654c160b9e2659b9d0ba7e5b6eb7c59e5d0dbf48f"
+    },
+    {
+      "path": "app/javascript/application.js",
+      "sha256": "d3f3d1b31962c4112a529e1f9af3760286edaf0969a4367c7ed90a4c96647650"
+    },
+    {
+      "path": "app/javascript/controllers/application.js",
+      "sha256": "b5836315bab7b8d055ac3346bf57f933fa8aa8b37e9ea7b704cb2ae2bff129b8"
+    },
+    {
+      "path": "app/javascript/controllers/bank_connection_controller.js",
+      "sha256": "59a741065ec0ede02ce5aaf6c6c05699b7298590c709128b80a8f02928a75141"
+    },
+    {
+      "path": "app/javascript/controllers/dismissible_controller.js",
+      "sha256": "c1ae4ac8885aaf060a7026671e99e52ca8874ce104411faa2d26ffca5a8a05c7"
+    },
+    {
+      "path": "app/javascript/controllers/duplicate_review_controller.js",
+      "sha256": "1fd985e1965492a04e06a544a481af03201a0e49fdd2738aed06e33b179cad81"
+    },
+    {
+      "path": "app/javascript/controllers/form_errors_controller.js",
+      "sha256": "454ef2a851a4682502b33057149dbbfd6deccb25ba425f5194bc15db98ea6734"
+    },
+    {
+      "path": "app/javascript/controllers/hello_controller.js",
+      "sha256": "a85435d6127f62a9dc5bece74854e75586089f18ea7759db1a9a672ef83934e5"
+    },
+    {
+      "path": "app/javascript/controllers/index.js",
+      "sha256": "a2d8f59d301f2f6ac02171ef63c930e00ea0f0bcf3b6cd8bf0c14a0733414058"
+    },
+    {
+      "path": "app/javascript/controllers/lazy_editor_controller.js",
+      "sha256": "601f24d4b96e78eedd578bfda356b1f7643e7e3ae7d1dc8e8bc2a3eb24f52d1a"
+    },
+    {
+      "path": "app/javascript/controllers/password_visibility_controller.js",
+      "sha256": "8b768dd2cae5d800bbc8e727166c4c2d8f4fda74d70af7a21dfa200b4de973a3"
+    },
+    {
+      "path": "app/javascript/controllers/responsive_disclosure_controller.js",
+      "sha256": "bdcfbba12b7e9d4d301bbb2bdbf0d160904b97868628c7d5b225ee86e8301bac"
+    },
+    {
+      "path": "app/javascript/controllers/split_editor_controller.js",
+      "sha256": "f6e068216ae22215e883efedbd997373a6ef233128af77031eb4a72e95defda1"
+    },
+    {
+      "path": "app/javascript/controllers/transaction_selection_controller.js",
+      "sha256": "00709517575052f6887caf6a100c0d3bc24ab9b3403828eb5fc0f7f42a3c1613"
+    },
+    {
+      "path": "app/jobs/application_job.rb",
+      "sha256": "d51e125007521b0f59765422cf3cf949b59b2054cdac6567a95b4a7aeaf1d722"
+    },
+    {
+      "path": "app/jobs/plaid_sync_all_job.rb",
+      "sha256": "63acbc84b810a0b926e60ccc03f3ac5596d0d8dea53ed5157eb3b3001f7eb9c7"
+    },
+    {
+      "path": "app/jobs/plaid_sync_item_job.rb",
+      "sha256": "8b4cc41c8b90e492b8e92b480ba1855ed5400e76c1c8f71277f4cf53243c446f"
+    },
+    {
+      "path": "app/mailers/application_mailer.rb",
+      "sha256": "51b58ee6215d29f50f4f35b309e849766e40f584016e48ec9ea66558ab352fa7"
+    },
+    {
+      "path": "app/models/account.rb",
+      "sha256": "37ae9582fea17d2993fd913b82febb56d6ae53aeb2f7a39133f7ef399a89e4cb"
+    },
+    {
+      "path": "app/models/application_record.rb",
+      "sha256": "12bf7d0eaefce4d50e0719991e19b48a36a7865aeb7ac745980584806155fdc1"
+    },
+    {
+      "path": "app/models/asset_valuation.rb",
+      "sha256": "ea0341737bc481869ff595232ef7584a215b1a5c7631f91b1437663d9518854c"
+    },
+    {
+      "path": "app/models/balance_snapshot.rb",
+      "sha256": "58ad0a77d1e996b093a4ec9caf5e9fb2d58866ec6da1b3fb8b7c953b742ade36"
+    },
+    {
+      "path": "app/models/budget.rb",
+      "sha256": "266da394543853fae2b408a3e8ff43e28e08b0b8333a3205b3622cc56fc23fef"
+    },
+    {
+      "path": "app/models/category.rb",
+      "sha256": "cde2596dd910e41ab34c26356e2a2848bd0a647b4eeea91bb87a835c6204d754"
+    },
+    {
+      "path": "app/models/category_expense_type.rb",
+      "sha256": "75a27c0385ef39b71a32979ca466ad0d23cca5c5f7ac4d29644c47c8ac1a21d5"
+    },
+    {
+      "path": "app/models/concerns/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app/models/current.rb",
+      "sha256": "f90a795c351171013109a11ccc32628b9119bd8d8bf21dfe25e2281f90add136"
+    },
+    {
+      "path": "app/models/import_batch.rb",
+      "sha256": "c764b2ea466dc3d095604ae210e254ca3f36ff6ac76cb88ba76c6841692809f5"
+    },
+    {
+      "path": "app/models/import_profile.rb",
+      "sha256": "49b6e97a0b5881589022ac52f1d901d6fa28a2e2b98ff34e2d9833feb4d1705b"
+    },
+    {
+      "path": "app/models/institution.rb",
+      "sha256": "b219e655b70ff18e23e9bcd46b4f386972a9ef5ff32e1cbc99d4b1f2d481b62d"
+    },
+    {
+      "path": "app/models/manual_asset.rb",
+      "sha256": "cf4e98451d328983f1062ceedc4e10cbcaa911dff6db3cb101a89437d5149bc5"
+    },
+    {
+      "path": "app/models/plaid_item.rb",
+      "sha256": "8cb61e8c98231cc4559a36552d1b42592865671e4a75e325c317f7104f994f58"
+    },
+    {
+      "path": "app/models/recurring_dismissal.rb",
+      "sha256": "929a744a80bd2d935a567c0a9b2c8ad395be9958cb029730eb711375c7cd4327"
+    },
+    {
+      "path": "app/models/recurring_item.rb",
+      "sha256": "7d58f6645df5ce04ae14f702a89947212140543f79101547db24922ac4f926c8"
+    },
+    {
+      "path": "app/models/transaction.rb",
+      "sha256": "4aa7d36d2f3362bb9d792d87d8492c15fe0023d8d38a2f27f841d5aab52da5f0"
+    },
+    {
+      "path": "app/models/transaction_rule.rb",
+      "sha256": "bc3d56ba9f68e13ee8ab3becf582b46731f6958335fd27dfb5582353ad02ebe7"
+    },
+    {
+      "path": "app/models/user.rb",
+      "sha256": "8233506adcf1087838eaee420fc45ced4298eac463ae7fc9ab512e303cf4e0bb"
+    },
+    {
+      "path": "app/services/auto_categorizer.rb",
+      "sha256": "2265cae9d7dcf0a34f2b58cbda6b5bbd273e77e93b7163c18f62e024c9578dfc"
+    },
+    {
+      "path": "app/services/cash_flow_classifier.rb",
+      "sha256": "395ff1a8d2c50c2eea93d76736c02aba09a6b1c230d04c8544df7fe796e224da"
+    },
+    {
+      "path": "app/services/duplicate_transaction_review.rb",
+      "sha256": "acf8a4dca15c46f0a09f5b31ae18e6763dabdbb0fe8df710f126f4820bf406a2"
+    },
+    {
+      "path": "app/services/expense_classification.rb",
+      "sha256": "f8ebaed0e8427e82e8c82c320e7f6e10f18f189a981a55fadbf550c3adf5601e"
+    },
+    {
+      "path": "app/services/financial_report.rb",
+      "sha256": "3ba6f2fe288482b25caff8aef3997d8007bc4f39bd1590134d5f291a01e2b5e9"
+    },
+    {
+      "path": "app/services/imports/csv_preview.rb",
+      "sha256": "737b54b694325c402b14b1345332f6f2a1ff7f9aeb76d3ff28ae1c6529e99548"
+    },
+    {
+      "path": "app/services/imports/mint_csv_transactions.rb",
+      "sha256": "6e9c39f111368c91b7d5392d31f3c53350287db18fcc83c88d04aadc32107162"
+    },
+    {
+      "path": "app/services/imports/tiller_account_mapping.rb",
+      "sha256": "c14048e12f9461fc025833118e1b15120c0fd154a7a03af10a9b45f623be1745"
+    },
+    {
+      "path": "app/services/imports/tiller_preview.rb",
+      "sha256": "3c34b3efe4c9885973b846d032338ffe38c1898c0ba88d630231c1073a2e8360"
+    },
+    {
+      "path": "app/services/imports/tiller_workbook.rb",
+      "sha256": "2fdcf8d5379aee481334fbc216daad767db77c24f4a370c3f85cb0a572ba61c2"
+    },
+    {
+      "path": "app/services/imports/xlsx_reader.rb",
+      "sha256": "60e6ff852ec8e1bdccc19ef91cc9f8493405c8bfcbf1bb138837c8689bf3b69a"
+    },
+    {
+      "path": "app/services/plaid/sync_item.rb",
+      "sha256": "f3c9b7f90cae48f8af76a2a2797713cc1f1e3b165e41ccec7206716b0d1d39ae"
+    },
+    {
+      "path": "app/services/plaid/upsert_accounts.rb",
+      "sha256": "b40e39d28c2b38bc6773fad02eceb79a497661e55a0e2bd9e102234f28b17402"
+    },
+    {
+      "path": "app/services/plaid/upsert_transactions.rb",
+      "sha256": "10ab3f15bde955b92fc874f05f4bf9c9f19b7b1ca3d4ec49372fd76503657a2a"
+    },
+    {
+      "path": "app/services/plaid_api/client.rb",
+      "sha256": "2ed2c3c53a2f4e413fef4eaf475f11573fd96c039b1faa264e467bdb4c6bee7a"
+    },
+    {
+      "path": "app/services/plaid_api/error.rb",
+      "sha256": "fb5e964966a901325b418e454ab048313eef96bdc27d503111a0dc7a811ea0ba"
+    },
+    {
+      "path": "app/services/recurring_detector.rb",
+      "sha256": "b92fcfc3e041a5f3fe26f098c50f1b9bcd681f51637b9b50c168599f59d5a995"
+    },
+    {
+      "path": "app/services/transaction_search.rb",
+      "sha256": "2b5bf5335b23e70cccc5dadeb09b61127f6077287006cf7b34046003b538c210"
+    },
+    {
+      "path": "app/views/bank_connections/new.html.erb",
+      "sha256": "250c58ad3d2c3ab51c34f76176c217bb440cb537a789485e9871258e2c62ad6a"
+    },
+    {
+      "path": "app/views/budgets/index.html.erb",
+      "sha256": "899081a6792feae6451d476ac72fcf904a8cb03eb692324f88d180e3b2b91340"
+    },
+    {
+      "path": "app/views/categories/_editor.html.erb",
+      "sha256": "a1dc344a5365538e3ef4f8e59a552dc3ff66a58bf46728291bee2419b86b645a"
+    },
+    {
+      "path": "app/views/categories/edit.html.erb",
+      "sha256": "22fb9a7516e792f2cb4383f8bba632706774d9a4624460a9ae5669f0bced213f"
+    },
+    {
+      "path": "app/views/categories/index.html.erb",
+      "sha256": "6525be5b1e2ca65fa33da791b55de03d20ff699f89819d4ff784c3cd39eae3ba"
+    },
+    {
+      "path": "app/views/dashboard/_connections.html.erb",
+      "sha256": "1403e15b988c47d1a7c3f62aff179bc015b5d6c902011f1d490c2839a6efab97"
+    },
+    {
+      "path": "app/views/dashboard/show.html.erb",
+      "sha256": "3bce049218f44d0ff0b5d32c33783c58105ba2ba62f61667aa21d87b0a690058"
+    },
+    {
+      "path": "app/views/imports/_tiller_notes.html.erb",
+      "sha256": "1264547a78166c11773c2d48ba86f26c41354e73acf0ad3798643a565b6d2817"
+    },
+    {
+      "path": "app/views/imports/new.html.erb",
+      "sha256": "c1555c344db9a5d1d407253b7556a9aecab2eef4a92c39cd45b9d90bf26ff886"
+    },
+    {
+      "path": "app/views/imports/show.html.erb",
+      "sha256": "9991cd205e4639ea9be99968ba997c720d36a408fc34b6a2e427a3551dcc1aa2"
+    },
+    {
+      "path": "app/views/imports/tiller.html.erb",
+      "sha256": "15e18da6d3efa69669645055e31bec4afbfe33f033e6d538f7df53f9bd1172da"
+    },
+    {
+      "path": "app/views/layouts/application.html.erb",
+      "sha256": "be175253296e14b2a7be5d75cc128e2e83f5ee5d9ccf678126dc6a7ecf5b0b03"
+    },
+    {
+      "path": "app/views/layouts/mailer.html.erb",
+      "sha256": "3be3ece9c575096f91f8ecc6a4efb0c7ffd509d2ed4b06c3461bd920201bbd37"
+    },
+    {
+      "path": "app/views/layouts/mailer.text.erb",
+      "sha256": "51353f9de3a26d4b28f7db91152bf56d31cfa9e4bd3c834680772a63cd374698"
+    },
+    {
+      "path": "app/views/manual_assets/_form.html.erb",
+      "sha256": "741f1fa8a475849afefefd208222c94bf7a2ebb3e4639cbdd71dd788a75a17c2"
+    },
+    {
+      "path": "app/views/manual_assets/edit.html.erb",
+      "sha256": "ed7952cfbe7c932ea5cf182277cec508343f3731d258a39b7c1022ff798c1542"
+    },
+    {
+      "path": "app/views/manual_assets/index.html.erb",
+      "sha256": "dbff5a0eb3312a7041d93374074bb963ae5f4861ef7b40dc1190f8647348fcc2"
+    },
+    {
+      "path": "app/views/manual_assets/new.html.erb",
+      "sha256": "518e42aa14a58124fd5dd2b0aad17c9555e4d0bae2ba2bc1fbecc4bc01cdfe35"
+    },
+    {
+      "path": "app/views/passwords/edit.html.erb",
+      "sha256": "5d3bfdc4249980c21fbc19b034e3fa96990f06344d86f9e57c7ad083044a5f8d"
+    },
+    {
+      "path": "app/views/pwa/manifest.json.erb",
+      "sha256": "ea186ab5dc4f31e18c0a6caaa7a8a79548031099bf668429b0fa351e924d51c4"
+    },
+    {
+      "path": "app/views/pwa/service-worker.js",
+      "sha256": "54bba97f108ac8d65af816aab152cc1860c9d9809641ba845231131db56d59bf"
+    },
+    {
+      "path": "app/views/recurring_items/_form.html.erb",
+      "sha256": "16340646296e5c3da665f63f07f173fd2bd6d9f20e75e66f3dd75b1994e00cdb"
+    },
+    {
+      "path": "app/views/recurring_items/edit.html.erb",
+      "sha256": "e7063b091024c2d2d75bd76f02e9ef689138d9089af7c963720422665840fe2a"
+    },
+    {
+      "path": "app/views/recurring_items/index.html.erb",
+      "sha256": "3bdccfa7dc51598c16668c3d0889fed13cb1698a8463687a6176909bb554b1db"
+    },
+    {
+      "path": "app/views/recurring_items/new.html.erb",
+      "sha256": "0a826f65073bd5ec194c768375cca138c4a5f219edc17decf8db977ba7bf2f0b"
+    },
+    {
+      "path": "app/views/sessions/new.html.erb",
+      "sha256": "8eac6b2720cfc3a74401a58df559fe3af8511bc29ba1e826cd4bf05e57017556"
+    },
+    {
+      "path": "app/views/shared/_form_errors.html.erb",
+      "sha256": "8a989ce496b4421358be266d72c2321a94dc4204757c01ed0acd9ab1e87964ec"
+    },
+    {
+      "path": "app/views/shared/_list_search.html.erb",
+      "sha256": "a7934fc8b641e12e31884e2b6edcdcc35836d00ec582740d1d12f3912555c3fe"
+    },
+    {
+      "path": "app/views/shared/_navigation.html.erb",
+      "sha256": "4192739e8bece9db4e1521b53fb6b1c6ace456d9e14b7e074f015837f1363043"
+    },
+    {
+      "path": "app/views/shared/_password_field.html.erb",
+      "sha256": "d4675f67a31a048173dd76aba10d601cce65757a1a0a2cd5f81a922c9b2f5e46"
+    },
+    {
+      "path": "app/views/transaction_rules/_form.html.erb",
+      "sha256": "df9de3cd543ec57ed9463c940ea071a1fb6f84436b31d131253b70681619a357"
+    },
+    {
+      "path": "app/views/transaction_rules/edit.html.erb",
+      "sha256": "d790690611085fa6743d74420f85fa57aef7032845e059e745d5c932e84ca3f6"
+    },
+    {
+      "path": "app/views/transaction_rules/index.html.erb",
+      "sha256": "f3b81bf83bfcbd7ae91a985d168dd0473b56fee975956b6375c3548e4a193fbe"
+    },
+    {
+      "path": "app/views/transactions/_filters.html.erb",
+      "sha256": "3e2fbfd5cd9115f1461fe20ec8c1eed17692cf0f989a3d11bcc694273b14ac8f"
+    },
+    {
+      "path": "app/views/transactions/_form.html.erb",
+      "sha256": "4770d48346979c29f05beb51248d2434da9ec509a8b73c2c6f79aedb696ab962"
+    },
+    {
+      "path": "app/views/transactions/_pagination.html.erb",
+      "sha256": "17e4fb56f175dba6c896d3ff88a37b0d8f84ed9293848aeba0da12167ce3694e"
+    },
+    {
+      "path": "app/views/transactions/_split_form.html.erb",
+      "sha256": "8384536185e23b3e39bc5781afe5aae51a8079031ccebadb31c0ee9256dd5b98"
+    },
+    {
+      "path": "app/views/transactions/_split_row.html.erb",
+      "sha256": "e22be3bdf0ad8762ffadbe110c45c02c10be0c66d220077dfd1524c462a3eb8a"
+    },
+    {
+      "path": "app/views/transactions/duplicates.html.erb",
+      "sha256": "4c7513bd0dad6098e83c45f2ecf17b8d1ec6e8684baea6fd6391cd0b9dfc4fae"
+    },
+    {
+      "path": "app/views/transactions/index.html.erb",
+      "sha256": "775b71e7eff425b504df6882d0fff62aa1604dfad0a20b37322582d3f71498f6"
+    },
+    {
+      "path": "app/views/transactions/new.html.erb",
+      "sha256": "b4b75f1c855b310eca8afc263f54b6dd9663a2d6cb43b359b71c5bdf7f227342"
+    },
+    {
+      "path": "app/views/transactions/show.html.erb",
+      "sha256": "76025d6564e9828b1cc58b8389d4ee6fc2a55c3477fcc02f2d6e0dc99c6c1e23"
+    },
+    {
+      "path": "app/views/trends/_spending.html.erb",
+      "sha256": "9d020e0d9cd218c285f64672e80c3b192c7d1e005155a9db37bc426f5380e53f"
+    },
+    {
+      "path": "app/views/trends/show.html.erb",
+      "sha256": "30307ab96658f11418888891a27a7932549d9e21f22342e10fa4355de10e2246"
+    },
+    {
+      "path": "app/views/users/new.html.erb",
+      "sha256": "65d8089ace2a6c4ffe1967771fc6eb793a2c064c5578d0e3f26c4fa944ec32c5"
+    },
+    {
+      "path": "config/routes.rb",
+      "sha256": "f63b4330ab695281329a34aaa01b15de6ffd7cbb55148a95bd81e44a1c4f4607"
+    },
+    {
+      "path": "db/schema.rb",
+      "sha256": "35b468c2250422450917d02e2ee0bac6ed0e28e69418b9ef3c2730d9cb91dc2e"
+    },
+    {
+      "path": "test/application_system_test_case.rb",
+      "sha256": "d79dd5482e33b622b3924dfb0ddae09da9b26f52089af7981a376ec20bbc1750"
+    },
+    {
+      "path": "test/channels/application_cable/connection_test.rb",
+      "sha256": "7d16f75b6f878f2f91793eb5dbffc20a4ebf4d8896db1f2871d1d56d092686de"
+    },
+    {
+      "path": "test/controllers/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/fixtures/accounts.yml",
+      "sha256": "2f9a9ffbe98c9ad8aff387acefe417d6a87a0cd3a7b76b0090d198dab8e8c723"
+    },
+    {
+      "path": "test/fixtures/balance_snapshots.yml",
+      "sha256": "6a5c8c13fede2e1f32577b99c283afa67ccb218f7e325c6a259b761d4967ca1e"
+    },
+    {
+      "path": "test/fixtures/categories.yml",
+      "sha256": "390ac8288a3317afbb4b6a5fa264ff3308f8d3d095a2848ff7a4817cacaf476a"
+    },
+    {
+      "path": "test/fixtures/files/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/fixtures/institutions.yml",
+      "sha256": "fbc693ef230d274830504048ad8c4a19d5992fc7c6c9d38c4100309230a7271b"
+    },
+    {
+      "path": "test/fixtures/plaid_items.yml",
+      "sha256": "655ba768e2065a278d2a45484d5b6f2fd08f7cf56a5b6ddfc95e4d3ea192743a"
+    },
+    {
+      "path": "test/fixtures/transactions.yml",
+      "sha256": "3451e3b787879fafa39a0d0c91cf93e29e98eac6a98554689453c0b74c22b64c"
+    },
+    {
+      "path": "test/fixtures/users.yml",
+      "sha256": "6b93a16a5cd15f0b17f86c3634b9ea9ffd3a59766330b798e60941395b7627b3"
+    },
+    {
+      "path": "test/helpers/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/integration/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/integration/account_rules_test.rb",
+      "sha256": "cf2690cb368caac30e4eee2095ad2e41ad179089f4fbf547844dfe5fba104e60"
+    },
+    {
+      "path": "test/integration/account_tracking_test.rb",
+      "sha256": "faa7d7abcd7914d1bc9b5572604485d9c1a4e1c931c3720cac83c4e82e976133"
+    },
+    {
+      "path": "test/integration/auto_categorization_test.rb",
+      "sha256": "2de1640fcc9c2015fda2bee8fe7c1b0c50d606a8f4ad479d1dbcb8a2ed3654a1"
+    },
+    {
+      "path": "test/integration/cash_flow_classification_test.rb",
+      "sha256": "d9b9c81f8422aa3a8b896511419c4e8e3d906901b7f4f07f467d98774c82c31f"
+    },
+    {
+      "path": "test/integration/expense_breakdown_test.rb",
+      "sha256": "d49ed09e2cc637527005da63d4b04566635bf345316e63b348f0568fda090f36"
+    },
+    {
+      "path": "test/integration/form_recovery_test.rb",
+      "sha256": "ca9527e6b7afe84c63a541cf4ba53384dfc95e6c31fad02197bdeaf475d0336a"
+    },
+    {
+      "path": "test/integration/manual_assets_test.rb",
+      "sha256": "f5f92621e2cf9a86061daf35149bb1a812d65895e23bc10b7a06fd0732e2a0fa"
+    },
+    {
+      "path": "test/integration/mint_workflows_test.rb",
+      "sha256": "55113cac67c5e5b66d4cd35f196baf4891ebca3dd15c3b108bbf3cd58cc5d7cd"
+    },
+    {
+      "path": "test/integration/recurring_items_test.rb",
+      "sha256": "bf3bf8f917650bcd278da4b386efbcfaa6ca4a54ad6bfa0ea7660f0f39cf69ed"
+    },
+    {
+      "path": "test/integration/search_and_filters_test.rb",
+      "sha256": "983feadb9566f65ade0ae53060abb5fd41df657f5c65f0b343b91974599943d1"
+    },
+    {
+      "path": "test/integration/session_invalidation_test.rb",
+      "sha256": "efd78d37785053652ff2b67da2d8103e92c0b66e4ce7166443ebc51b22da044b"
+    },
+    {
+      "path": "test/integration/stale_account_refresh_test.rb",
+      "sha256": "b05e7d90f3511ae4956c024002aa5d486bcf0af278322883a8d30bfe69b56ae1"
+    },
+    {
+      "path": "test/integration/tiller_imports_test.rb",
+      "sha256": "e92ef0e53ecbf87396b178d659e27ab5e07429fda03a758ad05817edd326da9c"
+    },
+    {
+      "path": "test/mailers/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/models/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/models/account_test.rb",
+      "sha256": "39ee88a80ecdeb2174f967c0f0714c3dccdb87837071b78056070ed329c59a4a"
+    },
+    {
+      "path": "test/models/balance_snapshot_test.rb",
+      "sha256": "eafd1a39175d2e0f38e28e30baf1b2b8d4300979dd1459c1a9d4e2b8dcf195ef"
+    },
+    {
+      "path": "test/models/category_test.rb",
+      "sha256": "15fb533d6e0f7606c9b6e55e132a7dc6816e15647f492c193a108548460ec8f0"
+    },
+    {
+      "path": "test/models/institution_test.rb",
+      "sha256": "91997558bfe4f4278b031ed79612e1ec8d7b5e9b83a0f136313ad097b384ca72"
+    },
+    {
+      "path": "test/models/plaid_item_test.rb",
+      "sha256": "7befc8c0dcdd5f9ca79840503624298114ba7bea30e4fbc82a9a5e4fc00f580e"
+    },
+    {
+      "path": "test/models/recurring_item_test.rb",
+      "sha256": "a0d60c626b31deb6fb8658fe73d514598517dc423f2a774b36e12f4e94843f70"
+    },
+    {
+      "path": "test/models/transaction_test.rb",
+      "sha256": "631229ee75fcf7c18c035233e890049e2a4957f4a51fa4dc0c782f0626486ec1"
+    },
+    {
+      "path": "test/models/user_test.rb",
+      "sha256": "48b9cfaaca378e0364b36e2b9407c2c71861789dedce9359ec5c10aa0efed6fe"
+    },
+    {
+      "path": "test/services/recurring_detector_test.rb",
+      "sha256": "a30b9a7233fdd293f394ee140bbd9ef81a90c1a746796b6f29c7843657602062"
+    },
+    {
+      "path": "test/services/tiller_workbook_test.rb",
+      "sha256": "3cebd10323c61cf159cd09c06647fecd136cf3c39aa8c7caa288780aa3583c09"
+    },
+    {
+      "path": "test/support/tiller_workbook_fixture.rb",
+      "sha256": "dde8c550ce014a77d2ed780fa4b609d430bd8903ae34e2a4ea9c9ec5cbc191e4"
+    },
+    {
+      "path": "test/system/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/test_helper.rb",
+      "sha256": "9ae153db015fed605e2598c0498577752180eac7cf333cff96c188002b769a26"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b3256ba8a57a0d0e7ed6d06859b23ec7c185a4e32dbc5e5e22a377c965127529"
+    }
+  ]
+}

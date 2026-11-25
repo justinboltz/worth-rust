@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+worth_root="$(cd "$(dirname "$0")/.." && pwd)"
+worth_source="${1:?Usage: bin/compare-rails /path/to/Budget}"
+worth_source="$(cd "$worth_source" && pwd)"
+cd "$worth_root"
+cargo build --locked --bin compare_rails
+(cd "$worth_source" && bin/rails runner "$worth_root/bin/report_rails.rb") | "$worth_root/target/debug/compare_rails"

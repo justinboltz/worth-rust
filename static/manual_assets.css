@@ -1,0 +1,9 @@
+.asset-form, .valuation-history { max-width: 720px; }
+.asset-form { padding: var(--space-6); }
+.asset-form form { display: grid; gap: var(--space-5); }
+.asset-form form > div:not(.form-actions) { display: grid; gap: var(--space-2); }
+.asset-form label { font-size: 13px; font-weight: 500; }
+.asset-form input:not([type=submit]), .asset-form select, .asset-form textarea { width: 100%; }
+.asset-form .footnote { padding: 0; }
+.asset-form .form-actions { margin-top: 0; }
+@media (max-width: 900px) { .asset-form { padding: var(--space-5); } }

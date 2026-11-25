@@ -1,0 +1,170 @@
+{
+  "PRIMARY_PATHS": {
+    "INCOME": [
+      "Income"
+    ],
+    "FOOD_AND_DRINK": [
+      "Food & Dining"
+    ],
+    "GENERAL_MERCHANDISE": [
+      "Shopping"
+    ],
+    "TRANSPORTATION": [
+      "Auto & Transport"
+    ],
+    "RENT_AND_UTILITIES": [
+      "Bills & Utilities"
+    ],
+    "ENTERTAINMENT": [
+      "Entertainment"
+    ],
+    "MEDICAL": [
+      "Health & Fitness"
+    ],
+    "PERSONAL_CARE": [
+      "Health & Fitness"
+    ],
+    "TRAVEL": [
+      "Travel"
+    ],
+    "BANK_FEES": [
+      "Fees & Charges"
+    ],
+    "HOME_IMPROVEMENT": [
+      "Home"
+    ],
+    "GENERAL_SERVICES": [
+      "Services"
+    ],
+    "LOAN_PAYMENTS": [
+      "Bills & Utilities"
+    ]
+  },
+  "DETAIL_PATHS": {
+    "INCOME_SALARY": [
+      "Income",
+      "Paycheck"
+    ],
+    "INCOME_INTEREST_EARNED": [
+      "Income",
+      "Interest Income"
+    ],
+    "INCOME_CONTRACTOR": [
+      "Income",
+      "Other Income"
+    ],
+    "INCOME_DIVIDENDS": [
+      "Income",
+      "Other Income"
+    ],
+    "INCOME_RETIREMENT_PENSION": [
+      "Income",
+      "Other Income"
+    ],
+    "INCOME_UNEMPLOYMENT": [
+      "Income",
+      "Other Income"
+    ],
+    "FOOD_AND_DRINK_GROCERIES": [
+      "Food & Dining",
+      "Groceries"
+    ],
+    "FOOD_AND_DRINK_COFFEE": [
+      "Food & Dining",
+      "Coffee Shops"
+    ],
+    "FOOD_AND_DRINK_FAST_FOOD": [
+      "Food & Dining",
+      "Restaurants"
+    ],
+    "FOOD_AND_DRINK_RESTAURANT": [
+      "Food & Dining",
+      "Restaurants"
+    ],
+    "FOOD_AND_DRINK_RESTAURANTS": [
+      "Food & Dining",
+      "Restaurants"
+    ],
+    "GENERAL_MERCHANDISE_CLOTHING_AND_ACCESSORIES": [
+      "Shopping",
+      "Clothing"
+    ],
+    "GENERAL_MERCHANDISE_ELECTRONICS": [
+      "Shopping",
+      "Electronics & Software"
+    ],
+    "GENERAL_MERCHANDISE_HOME_GOODS": [
+      "Shopping",
+      "Home Goods"
+    ],
+    "GENERAL_MERCHANDISE_GIFTS_AND_NOVELTIES": [
+      "Gifts & Donations"
+    ],
+    "HOME_IMPROVEMENT_FURNITURE": [
+      "Shopping",
+      "Home Goods"
+    ],
+    "TRANSPORTATION_GAS": [
+      "Auto & Transport",
+      "Gas & Fuel"
+    ],
+    "TRANSPORTATION_PARKING": [
+      "Auto & Transport",
+      "Parking"
+    ],
+    "TRANSPORTATION_PUBLIC_TRANSIT": [
+      "Auto & Transport",
+      "Public Transportation"
+    ],
+    "RENT_AND_UTILITIES_ELECTRICITY": [
+      "Bills & Utilities",
+      "Electricity"
+    ],
+    "RENT_AND_UTILITIES_GAS": [
+      "Bills & Utilities",
+      "Gas"
+    ],
+    "RENT_AND_UTILITIES_RENT": [
+      "Bills & Utilities",
+      "Rent"
+    ],
+    "RENT_AND_UTILITIES_INTERNET_AND_CABLE": [
+      "Bills & Utilities",
+      "Internet"
+    ],
+    "RENT_AND_UTILITIES_TELEPHONE": [
+      "Bills & Utilities",
+      "Mobile Phone"
+    ],
+    "RENT_AND_UTILITIES_WATER": [
+      "Bills & Utilities",
+      "Water"
+    ],
+    "LOAN_PAYMENTS_MORTGAGE_PAYMENT": [
+      "Bills & Utilities",
+      "Mortgage"
+    ],
+    "GENERAL_SERVICES_INSURANCE": [
+      "Bills & Utilities",
+      "Insurance"
+    ],
+    "GENERAL_SERVICES_POSTAGE_AND_SHIPPING": [
+      "Shopping"
+    ],
+    "GENERAL_SERVICES_AUTOMOTIVE": [
+      "Auto & Transport"
+    ],
+    "ENTERTAINMENT_TV_AND_MOVIES": [
+      "Entertainment"
+    ],
+    "ENTERTAINMENT_VIDEO_GAMES": [
+      "Entertainment"
+    ],
+    "GOVERNMENT_AND_NON_PROFIT_DONATIONS": [
+      "Gifts & Donations"
+    ],
+    "GOVERNMENT_AND_NON_PROFIT_TAX_PAYMENT": [
+      "Taxes"
+    ]
+  }
+}

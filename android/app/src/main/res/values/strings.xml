@@ -1,0 +1,8 @@
+<resources>
+    <string name="connection_title">Worth couldn’t load this page</string>
+    <string name="connection_help">Check your connection and try again.</string>
+    <string name="retry">Try again</string>
+    <string name="refresh">Refresh</string>
+    <string name="open_browser">Open in browser</string>
+    <string name="browser_unavailable">Install a browser to open this page.</string>
+</resources>
